@@ -2,7 +2,7 @@
     --body-bg: #232d35;
     --side-panel-bg: #17212b;
     --side-panel-hover-bg: #34495e;
-    --main-panel-bg: #4b6177;
+    --main-panel-bg: #3c4d5e46;
     --text-color: white;
     --font-family-side: "Verdana", sans-serif;
     --font-family-main: "Arial", sans-serif;
@@ -60,6 +60,7 @@ body {
 
 .project-card {
     color: var(--text-color);
+    background-color: var(--main-panel-bg);
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -81,7 +82,7 @@ body {
 }
 
 .project-card img {
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
 }

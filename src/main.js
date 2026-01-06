@@ -7,7 +7,10 @@ projects.forEach(project => {
     const projectCard = document.createElement('div');
     projectCard.className = 'project-card';
     projectCard.innerHTML = `
+    <div class="project-top">
     <h3>${project.title}</h3>
+    </div>
+    <div class="project-body">
     <p>${project.description}</p>
     <img src="${project.image}" alt="${project.title}">
     <br><br>
@@ -16,7 +19,7 @@ projects.forEach(project => {
     </div>
     <br><br>
     <a class="project-link" href="${project.link}">View project on GitHub</a>
-    
+    </div>
     `;
 
     document.getElementById('projects-container').appendChild(projectCard);

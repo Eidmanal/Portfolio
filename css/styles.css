@@ -1,6 +1,6 @@
 :root{
     --body-bg: #2c2c2c;
-    --side-panel-bg: #252525;
+    --side-panel-bg: #222;
     --side-panel-hover-bg: #505050;
     --main-panel-bg: #58585846;
     --text-color: white;
@@ -30,6 +30,7 @@
     padding: 10px;
     font-family: "Verdana", sans-serif;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 #side-panel nav ul li:hover {
@@ -61,7 +62,7 @@ body {
 .project-card {
     color: var(--text-color);
     background-color: var(--main-panel-bg);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -116,7 +117,7 @@ body {
 #footer{
     margin-left: 240px;
     padding: 10px;
-    background-color: #0a0a0ac7;
+    background-color: #0a0a0a75;
     color: #ffffff;
     font-family: "Verdana", sans-serif;
     font-size: 14px;

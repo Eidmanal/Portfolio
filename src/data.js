@@ -3,7 +3,7 @@ const projects = [
         title: "Portfolio Website",
         description: "A website to showcase my projects and skills (this very site). ",
         link: "#",
-        image: "img/project1.png",
+        image: "img/portfolio.png",
         stack: "HTML, CSS, JavaScript"
     },
     {
@@ -11,7 +11,7 @@ const projects = [
         description: "A simulator for finite automata and regular expressions. <br>It allows users to create and visualize finite automata, convert regular expressions to automata, and test strings against the automata.<br><br><b>Note: </b> This project is still in progress.",
         link: "#",
         image: "img/automata.png",
-        stack: "Java, JavaFX"
+        stack: "Java, Swing"
     },
     {
         title: "Online Multiplayer Sudoku",

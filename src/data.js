@@ -2,14 +2,14 @@ const projects = [
     {
         title: "Portfolio Website",
         description: "A website to showcase my projects and skills (this very site). ",
-        link: "#",
+        link: "https://github.com/Eidmanal/Portfolio",
         image: "img/portfolio.png",
         stack: "HTML, CSS, JavaScript"
     },
     {
         title: "Automata Simulator",
         description: "A simulator for finite automata and regular expressions. <br>It allows users to create and visualize finite automata, convert regular expressions to automata, and test strings against the automata.<br><br><b>Note: </b> This project is still in progress.",
-        link: "#",
+        link: "https://github.com/Eidmanal/Automata-Simulator",
         image: "img/automata.png",
         stack: "Java, Swing"
     },
@@ -23,7 +23,7 @@ const projects = [
     {
         title: "Audio Editor",
         description: "A basic audio editor that allows users to cut, copy, paste, and apply simple effects to audio files. <br>It supports multiple audio formats and provides a user-friendly interface for editing.<br><br><b>Note: </b> This project is still in progress.",
-        link: "#",
+        link: "https://github.com/Eidmanal/Audio-Editor",
         image: "img/audio.png",
         stack: "Java, JavaFX"
     }

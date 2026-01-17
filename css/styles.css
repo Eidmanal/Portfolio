@@ -73,7 +73,7 @@ body {
     padding: 40px 30px;
     margin-bottom: 40px;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 }
 
 #home h1 {
@@ -82,11 +82,25 @@ body {
     margin-bottom: 12px;
 }
 
+#home-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#home-container div {
+    align-items: center;
+    align-content: left;
+}
+
 #home p {
     max-width: 700px;
-    margin: 0 auto 15px;
     line-height: 1.8;
     color: var(--text-secondary);
+    text-align: left;
 }
 
 #home img {
@@ -95,16 +109,8 @@ body {
     margin: 25px 0;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid var(--accent);
-    box-shadow:
-        0 0 25px var(--accent-soft),
-        0 0 60px rgba(255, 166, 49, 0.15);
-    transition: transform 0.3s ease;
 }
 
-#home img:hover {
-    transform: scale(1.07);
-}
 
 #about {
     background: var(--card-bg);
@@ -114,7 +120,7 @@ body {
     padding: 40px 30px;
     margin-bottom: 40px;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 
 }
 
@@ -125,7 +131,7 @@ body {
     border-radius: 20px;
     margin-bottom: 30px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
 }
 
@@ -169,7 +175,7 @@ body {
 }
 
 .tech {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--card-border);
     color: #dcdcdc;
     padding: 6px 18px;
@@ -182,10 +188,18 @@ body {
     background: var(--accent-soft);
 }
 
+#about-tech-stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
 #footer {
     margin-left: 220px;
     padding: 40px;
-    background: rgba(10,10,10,0.6);
+    background: rgba(10, 10, 10, 0.6);
     backdrop-filter: blur(10px);
     border-top: 1px solid var(--card-border);
     font-size: 14px;
@@ -208,17 +222,107 @@ body {
     transform: translateY(-4px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 720px) {
+
     #side-panel {
-        width: 70px;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 10px 15px;
+        border-right: none;
+        border-top: 1px solid var(--card-border);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        background: rgba(18, 18, 18, 0.95);
     }
 
-    #main-panel,
-    #footer {
-        margin-left: 90px;
+    #side-panel nav {
+        width: 100%;
+    }
+
+    #side-panel nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    #side-panel nav ul li {
+        margin-bottom: 0;
+        padding: 8px;
+        border-radius: 8px;
     }
 
     #side-panel nav ul li a {
-        font-size: 0;
+        font-size: 14px;
+        display: block;
+    }
+
+    #side-panel nav ul li:hover {
+        transform: translateY(-5px);
+    }
+
+    #home h1 {
+        font-size: 1.5rem;
+        color: var(--accent);
+        margin-bottom: 12px;
+    }
+
+    #home img {
+        width: 120px;
+        height: 120px;
+        margin: 25px 0;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    #home-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #home-container div {
+        align-items: center;
+        align-content: center;
+    }
+
+    #home p {
+        max-width: 700px;
+        line-height: 1.8;
+        color: var(--text-secondary);
+        text-align: center;
+    }
+
+
+    #main-panel {
+        margin-left: 0;
+        padding: 20px;
+        padding-bottom: 100px;
+    }
+
+    #about-tech-stack {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    #footer {
+        margin-left: 0;
+        text-align: center;
+        padding-bottom: 100px;
+        /* Ensure footer clears the nav bar */
+        justify-items: center;
     }
 }
